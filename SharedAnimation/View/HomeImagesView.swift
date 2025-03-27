@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeImagesView: View {
     // MARK: - PROPERTIES
     
-    var imageData: [ImagesModel] = imagesData.shuffled().prefix(5).map { $0 }
+    var imageData: [ImagesModel] = imagesData.shuffled()
     
     // MARK: - BODY
     
