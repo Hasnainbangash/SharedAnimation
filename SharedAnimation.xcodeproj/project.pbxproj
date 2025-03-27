@@ -30,11 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D079528D2D95105A00CA532F /* SharedAnimation */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SharedAnimation;
-			sourceTree = "<group>";
-		};
 		D079529E2D95105D00CA532F /* SharedAnimationTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SharedAnimationTests;
@@ -43,6 +38,11 @@
 		D07952A82D95105D00CA532F /* SharedAnimationUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SharedAnimationUITests;
+			sourceTree = "<group>";
+		};
+		D07953DC2D952A0B00CA532F /* SharedAnimation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SharedAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +75,7 @@
 		D07952822D95105A00CA532F = {
 			isa = PBXGroup;
 			children = (
-				D079528D2D95105A00CA532F /* SharedAnimation */,
+				D07953DC2D952A0B00CA532F /* SharedAnimation */,
 				D079529E2D95105D00CA532F /* SharedAnimationTests */,
 				D07952A82D95105D00CA532F /* SharedAnimationUITests */,
 				D079528C2D95105A00CA532F /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D079528D2D95105A00CA532F /* SharedAnimation */,
+				D07953DC2D952A0B00CA532F /* SharedAnimation */,
 			);
 			name = SharedAnimation;
 			packageProductDependencies = (
