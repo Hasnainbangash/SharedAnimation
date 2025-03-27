@@ -13,12 +13,14 @@ struct PlacesDetailView: View {
     // MARK: - BODY
     
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading) {
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 10) {
                 // MARK: - IMAGE VIEW
-                Image("hotelroomimage2")
+                Image("hotelroomimage4")
                     .resizable()
                     .scaledToFit()
+                    .clipped()
+                    .frame(height: 300)
                 
                 // MARK: - TITLE VIEW
                 PlaceDetailTitleView()
