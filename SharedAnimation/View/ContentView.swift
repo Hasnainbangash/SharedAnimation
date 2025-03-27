@@ -14,7 +14,7 @@ struct ContentView: View {
                 ForEach(1...5, id: \.self) { _ in
                     HomeView()
                         .listRowInsets(EdgeInsets())
-                }
+                } //: LOOP
             } //: LIST
             .listStyle(PlainListStyle())
             .navigationBarTitle("Airbnb", displayMode: .large)
