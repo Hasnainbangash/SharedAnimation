@@ -14,7 +14,7 @@ struct PlacesDetailView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 20) {
                 // MARK: - IMAGE VIEW
                 Image("hotelroomimage4")
                     .resizable()
@@ -25,7 +25,27 @@ struct PlacesDetailView: View {
                 // MARK: - TITLE VIEW
                 PlaceDetailTitleView()
                 
-                // MARK: - HIGHLIGHT SECTION VIEW
+                VStack(alignment: .leading, spacing: 25) {
+                    Divider()
+                    
+                    // MARK: - HIGHLIGHT SECTION VIEW
+                    
+                    HighlightSectionView(imageName: "suitcase", imageColor: .pink, title: "Only 13 hours left to book", titleDescription: "The host will stop accepting bookings for your dates soon.")
+                    
+                    Divider()
+                    
+                    HighlightSectionView(imageName: "suitcase", imageColor: .black, title: "Hosted by Aamir", titleDescription: "Superhost . 9 years hosting")
+                    
+                    Divider()
+                    
+                    HighlightSectionView(imageName: "door.left.hand.closed", imageColor: .black, title: "Self check-in", titleDescription: "You can check in with the bulding staff.")
+                    
+                    HighlightSectionView(imageName: "suitcase", imageColor: .black, title: "10-min walk to the lake", titleDescription: "This home is by Dal Lake")
+                    
+                    HighlightSectionView(imageName: "suitcase", imageColor: .black, title: "Extra spacious", titleDescription: "Guests love this home's spaciousness for a conformtable stay.")
+                    
+                    Divider()
+                } //: VSTACK
                 
             } //: VSTACK
             .padding()

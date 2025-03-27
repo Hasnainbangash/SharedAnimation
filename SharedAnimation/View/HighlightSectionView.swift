@@ -11,6 +11,7 @@ struct HighlightSectionView: View {
     // MARK: - PROPERTIES
     
     var imageName: String
+    var imageColor: Color
     var title: String
     var titleDescription: String
     
@@ -23,7 +24,7 @@ struct HighlightSectionView: View {
                 .scaledToFit()
                 .offset(y: 7)
                 .frame(width: 30, height: 30)
-                .foregroundColor(Color.pink)
+                .foregroundColor(imageColor)
             
             VStack(alignment: .leading, spacing: 8) {
                 Text(title)
@@ -41,5 +42,5 @@ struct HighlightSectionView: View {
 // MARK: - PREVIEW
 
 #Preview {
-    HighlightSectionView(imageName: "suitcase", title: "Only 13 hours left to book", titleDescription: "The host will stop accepting bookings for your dates soon.")
+    HighlightSectionView(imageName: "suitcase", imageColor: .pink, title: "Only 13 hours left to book", titleDescription: "The host will stop accepting bookings for your dates soon.")
 }
