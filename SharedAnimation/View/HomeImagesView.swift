@@ -10,10 +10,22 @@ import SwiftUI
 struct HomeImagesView: View {
     // MARK: - PROPERTIES
     
+    var imageData: [ImagesModel] = imagesData
+    
     // MARK: - BODY
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForEach(imageData) { image in
+                Image(image.imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 343, height: 324)
+                    .clipped()
+                    .cornerRadius(12)
+            } //: LOOP
+        } //: TAB VIEW
+        .tabViewStyle(.page)
     }
 }
 
