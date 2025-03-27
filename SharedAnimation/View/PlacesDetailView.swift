@@ -13,13 +13,21 @@ struct PlacesDetailView: View {
     // MARK: - BODY
     
     var body: some View {
-        // MARK: - IMAGE VIEW
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        
-        // MARK: - TITLE VIEW
-        
-        // MARK: - HIGHLIGHT SECTION VIEW
-        
+        ScrollView(.vertical) {
+            VStack(alignment: .leading) {
+                // MARK: - IMAGE VIEW
+                Image("hotelroomimage2")
+                    .resizable()
+                    .scaledToFit()
+                
+                // MARK: - TITLE VIEW
+                PlaceDetailTitleView()
+                
+                // MARK: - HIGHLIGHT SECTION VIEW
+                
+            } //: VSTACK
+            .padding()
+        } //: SCROLL VIEW
     }
 }
 

@@ -48,13 +48,13 @@ struct PlaceDetailTitleView: View {
                         .imageScale(.medium)
                     
                     Text("4.81")
-                        .font(.system(size: 16, weight: .medium, design: .rounded))
+                        .font(.system(size: 16, weight: .semibold, design: .rounded))
                         .foregroundColor(Color.black)
                     
                     Text("•")
                     
                     Text("16 reviews")
-                        .font(.system(size: 16, weight: .medium, design: .rounded))
+                        .font(.system(size: 16, weight: .semibold, design: .rounded))
                         .foregroundColor(Color.black)
                         .underline()
                 } //: HSTACK
