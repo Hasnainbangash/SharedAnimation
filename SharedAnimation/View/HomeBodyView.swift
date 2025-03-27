@@ -13,7 +13,35 @@ struct HomeBodyView: View {
     // MARK: - BODY
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .top) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Harlingen, Netherlands")
+                    .font(.system(size: 16, weight: .bold, design: .default))
+                
+                Text("Professional Host")
+                    .font(.system(size: 16, weight: .regular, design: .default))
+                    .foregroundColor(.gray)
+                
+                Text("18-23 Dec")
+                    .font(.system(size: 16, weight: .regular, design: .default))
+                    .foregroundColor(.gray)
+                
+                HStack {
+                    Text("$1,065")
+                    Text("total")
+                } //: HSTACK
+            } //: VSTACK
+            
+            Spacer()
+            
+            HStack(spacing: 2) {
+                Image(systemName: "star.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 15, height: 15, alignment: .center)
+                Text("4.76")
+            } //: HSTACK
+        } //: HSTACK
     }
 }
 
