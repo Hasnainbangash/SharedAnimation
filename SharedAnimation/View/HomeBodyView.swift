@@ -14,7 +14,7 @@ struct HomeBodyView: View {
     
     var body: some View {
         HStack(alignment: .top) {
-            VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 6) {
                 Text("Harlingen, Netherlands")
                     .font(.system(size: 18, weight: .bold, design: .default))
                     .foregroundColor(.black)
