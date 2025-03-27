@@ -15,6 +15,7 @@ struct HomeView: View {
     var body: some View {
         VStack(spacing: 12) {
             HomeImagesView()
+                .frame(height: 300)
             HomeBodyView()
         } //: VSTACK
         .padding()

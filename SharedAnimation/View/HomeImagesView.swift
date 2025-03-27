@@ -20,7 +20,6 @@ struct HomeImagesView: View {
                 Image(image.imageName)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.size.width - 32, height: 324)
                     .clipped()
                     .cornerRadius(12)
             } //: LOOP
