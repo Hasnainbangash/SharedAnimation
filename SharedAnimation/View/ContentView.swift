@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
-            ForEach(1...5, id: \.self) { _ in
-                HomeView()
-                    .listRowInsets(EdgeInsets())
-            }
-        } //: LIST
-        .listStyle(PlainListStyle())
+        NavigationView {
+            List {
+                ForEach(1...5, id: \.self) { _ in
+                    HomeView()
+                        .listRowInsets(EdgeInsets())
+                }
+            } //: LIST
+            .listStyle(PlainListStyle())
+            .navigationBarTitle("Airbnb", displayMode: .large)
+        } //: NAVIGATION
     }
 }
 

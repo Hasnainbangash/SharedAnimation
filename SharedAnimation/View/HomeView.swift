@@ -16,6 +16,8 @@ struct HomeView: View {
         VStack(spacing: 12) {
             HomeImagesView()
                 .frame(height: 300)
+                .cornerRadius(15)
+            
             HomeBodyView()
         } //: VSTACK
         .padding()

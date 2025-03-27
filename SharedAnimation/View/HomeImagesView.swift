@@ -21,7 +21,6 @@ struct HomeImagesView: View {
                     .resizable()
                     .scaledToFill()
                     .clipped()
-                    .cornerRadius(12)
             } //: LOOP
         } //: TAB VIEW
         .tabViewStyle(PageTabViewStyle())
