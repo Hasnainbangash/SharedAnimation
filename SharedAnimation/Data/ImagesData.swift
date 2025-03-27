@@ -10,7 +10,7 @@ import SwiftUI
 // MARK: - IMAGES DATA
 
 let imagesData: [ImagesModel] = [
-    ImagesModel(imageName: "hotelroomimage1"),
+    ImagesModel(imageName: "hotelroomimage7"),
     ImagesModel(imageName: "hotelroomimage2"),
     ImagesModel(imageName: "hotelroomimage3"),
     ImagesModel(imageName: "hotelroomimage4"),
