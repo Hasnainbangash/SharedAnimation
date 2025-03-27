@@ -40,13 +40,12 @@ struct PlacesDetailView: View {
                     
                     HighlightSectionView(imageName: "door.left.hand.closed", imageColor: .black, title: "Self check-in", titleDescription: "You can check in with the bulding staff.")
                     
-                    HighlightSectionView(imageName: "suitcase", imageColor: .black, title: "10-min walk to the lake", titleDescription: "This home is by Dal Lake")
+                    HighlightSectionView(imageName: "sun.haze", imageColor: .black, title: "10-min walk to the lake", titleDescription: "This home is by Dal Lake")
                     
-                    HighlightSectionView(imageName: "suitcase", imageColor: .black, title: "Extra spacious", titleDescription: "Guests love this home's spaciousness for a conformtable stay.")
+                    HighlightSectionView(imageName: "house", imageColor: .black, title: "Extra spacious", titleDescription: "Guests love this home's spaciousness for a conformtable stay.")
                     
                     Divider()
                 } //: VSTACK
-                
             } //: VSTACK
             .padding()
         } //: SCROLL VIEW
