@@ -10,6 +10,8 @@ import SwiftUI
 struct PlacesDetailView: View {
     // MARK: - PROPERTIES
     
+    @Environment(\.presentationMode) var presentationMode
+    
     // MARK: - BODY
     
     var body: some View {
@@ -47,7 +49,21 @@ struct PlacesDetailView: View {
                     Divider()
                 } //: VSTACK
             } //: VSTACK
-            .padding()
+            .padding(.horizontal)
+            .overlay(alignment: .topLeading) {
+                Button {
+                    // ACTION
+                    self.presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Image(systemName: "arrow.left.circle")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30, height: 30, alignment: .center)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .padding(.leading, 5)
+                } //: BUTTON
+            } //: OVERLAY
         } //: SCROLL VIEW
     }
 }
