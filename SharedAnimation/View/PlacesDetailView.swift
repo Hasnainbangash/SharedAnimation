@@ -18,11 +18,9 @@ struct PlacesDetailView: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 20) {
                 // MARK: - IMAGE VIEW
-                Image("hotelroomimage4")
-                    .resizable()
-                    .scaledToFit()
-                    .clipped()
+                HomeImagesView()
                     .frame(height: 300)
+                    .cornerRadius(15)
                 
                 // MARK: - TITLE VIEW
                 PlaceDetailTitleView()
